@@ -4,7 +4,7 @@
 
 $path = "frames";
 
-$fp = fopen("{$frames}/{$_GET['name']}", 'wb');
+$fp = fopen("{$path}/{$_GET['name']}", 'wb');
 fwrite($fp, $GLOBALS['HTTP_RAW_POST_DATA']);
 fclose($fp);
 ?>
